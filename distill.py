@@ -130,7 +130,7 @@ if __name__ == "__main__":
     best_acc = 0
     print("Start Training")
     for epoch in range(250):
-      print("epoch {} out of {}".format(epoch, 250))
+        print("epoch {} out of {}".format(epoch, 250))
         if epoch in [80, 160, 240]:
             for param_group in optimizer.param_groups:
                 param_group['lr'] /= 10
