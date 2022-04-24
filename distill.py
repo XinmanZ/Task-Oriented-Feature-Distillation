@@ -129,8 +129,8 @@ optimizer = optim.SGD(net.parameters(), lr=LR, weight_decay=args.l2, momentum=0.
 if __name__ == "__main__":
     best_acc = 0
     print("Start Training")
-    for epoch in range(250):
-        print("epoch {} out of {}".format(epoch, 250))
+    for epoch in range(25):
+        print("epoch {} out of {}".format(epoch, 25))
         if epoch in [80, 160, 240]:
             for param_group in optimizer.param_groups:
                 param_group['lr'] /= 10
